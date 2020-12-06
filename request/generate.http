@@ -1,0 +1,26 @@
+# curl -X POST
+#  -H "X-Parse-Application-Id: myAppId"
+#  -H "Content-Type: application/json"
+#  -d '{"score":1337,"playerName":"Sammy","cheatMode":false}'
+#  http://localhost:1337/parse/classes/GameScore
+POST http://localhost:1337/parse/classes/GameScore
+X-Parse-Application-Id: myAppId
+Content-Type: application/json
+
+{
+  "score": 1337,
+  "playerName": "Sammy",
+  "cheatMode": false
+}
+
+###
+
+###
+GET http://localhost:1337/parse/classes/GameScore/3HBnp9VYBm
+X-Parse-Application-Id: myAppId
+Content-Type: application/json
+
+###
+POST http://localhost:1337/parse/functions/getData
+X-Parse-Application-Id: myAppId
+Content-Type: application/json
